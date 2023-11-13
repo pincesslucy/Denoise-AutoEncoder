@@ -5,8 +5,8 @@ from torchvision import transforms
 from torchvision.utils import save_image
 
 img_size = (3, 32, 32)
-model = Denoise(img_size)
-model.load_state_dict(torch.load('/mnt/c/Users/lee/desktop/denoise/model/dea_epoch_99.pt'))
+model = Denoise()
+model.load_state_dict(torch.load('/mnt/c/Users/lee/desktop/denoise/model/dea.pt'))
 img = Image.open('/mnt/c/Users/lee/desktop/denoise/experiments/test_img.jpg')
 img_resize = img.resize((32,32))
 

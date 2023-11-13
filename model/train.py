@@ -56,4 +56,4 @@ for epoch in range(10):
     save_image(dc[0], f'/mnt/c/Users/lee/desktop/denoise/experiments/train{epoch}.jpg')
 
     print("[Epoch %d/%d] [loss: %f]"% (epoch, 10, loss.item()))
-    #torch.save(dea.state_dict(), f"dea_epoch_{epoch}.pt")
+torch.save(dea.state_dict(), f"dea.pt")
