@@ -1,6 +1,9 @@
 from torch.utils.data import DataLoader
 from torchvision import transforms
-from denoise.dataset.custumdataset import CustumDataset
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+from dataset.custumdataset import CustumDataset
 import torch
 import torch.nn as nn
 from dae import Denoise
