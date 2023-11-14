@@ -1,6 +1,7 @@
 import torch
 from PIL import Image
 from model.dae import Denoise
+from model.vae_denoise import VAE_denoise
 from torchvision import transforms
 from torchvision.utils import save_image
 
